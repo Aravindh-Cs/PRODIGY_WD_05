@@ -1,0 +1,116 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    text-transform: capitalize;
+}
+.info img 
+{
+    height: 200px;
+    width: auto;
+}
+.infos img
+{
+    height: 20px;
+    width: 20px;
+}
+.err 
+{
+    color: rgb(235, 27, 27);
+    font-size: 1.4em;
+    font-weight: 700;
+}
+.container 
+{
+    position: absolute;
+    background: rgba(47, 46, 47, 0.7);
+    padding: 20px;
+    height: 70vh;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.3em;
+    gap: 17px;
+    border: 3px solid rgb(240, 105, 8);
+}
+.info 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.infos 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.infos div 
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.search 
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+input::placeholder
+{
+    color: aliceblue;
+}
+.search input 
+{
+    background: transparent;
+    border: 2px solid whitesmoke;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: aliceblue;
+    font-size: .8em;
+}
+.search i
+{
+    background-color: aliceblue;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+}
+.search i:hover
+{
+    background-color: black;
+    color: aliceblue;
+}
+#weatherInfo 
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+video
+{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    object-fit: fill;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Update</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <video autoplay muted loop>
+    <source src="images/bg.mp4">
+   </video>
+    <div class="container">
+        <h1>🌤 Weather App</h1>
+        <div class="search">
+            <input type="text" id="input" placeholder="Enter city name">
+            <i class="fas fa-search" onclick="getWeather()"></i>
+        </div>
+        <p class="err"></p>
+        <div class="info">
+                <img src="images/clouds.png" class="infoimg" alt="">
+                <p class="temp">00°C</p>
+                <p class="city"></p>
+            </div>
+        <div id="weatherInfo">
+            <div class="infos">
+                <div>
+                    <img src="images/humidity.png" alt="">
+                    <p> <span class="humi">0%</span> <br> humidity</p>
+                </div>
+                <div>
+                    <img src="images/wind.png" alt="">
+                    <p><span class="wind">0M/s</span> <br> wind speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
